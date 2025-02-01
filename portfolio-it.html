@@ -1,0 +1,173 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabio Sapone | Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="noise-overlay"></div>
+    
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="favicon.ico" alt="Fabio Logo" style="height: 40px; width: 40px;">
+            </div>
+            <ul>
+                <li><a href="#home" data-i18n="nav.home">Pagina iniziale</a></li>
+                <li><a href="#about" data-i18n="nav.about">Su di me</a></li>
+                <li><a href="#skills" data-i18n="nav.skills">Le mie competenze</a></li>
+                <li><a href="#projects" data-i18n="nav.projects">Progetti</a></li>
+                <li><a href="#contact" data-i18n="nav.contact">Contattami</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1><span data-i18n="hero.greeting">Ciao, sono</span> <span id="typed-name-it"></span></h1>
+                    <p data-i18n="hero.subtitle">Sviluppatore Web & Designer Creativo</p>
+                    <div class="social-links">
+                        <a href="https://instagram.com/fck_fxb" target="_blank"><i class="ri-instagram-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-shapes">
+                <div class="shape shape1"></div>
+                <div class="shape shape2"></div>
+                <div class="shape shape3"></div>
+            </div>
+            <div class="parallax-background"></div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2 data-i18n="about.title">Su di me</h2>
+                <div class="about-content">
+                    <div class="about-text parallax-section">
+                        <p data-i18n="about.description"> Sono Fabio Sapone, al vostro servizio :) <br> Trasformo idee complesse in esperienze digitali intuitive e coinvolgenti. La mia passione è creare soluzioni innovative che uniscono estetica e funzionalità.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2 data-i18n="skills.title">Le mie competenze</h2>
+                <div class="skills-grid">
+                    <div class="skill-item" data-skill="HTML">
+                        <i class="ri-html5-fill"></i>
+                        <h3>HTML</h3>
+                        <p>Strutturazione semantica e accessibile di contenuti web</p>
+                        <div class="skill-progress" style="width: 90%;"></div>
+                    </div>
+
+                    <div class="skill-item" data-skill="CSS">
+                        <i class="ri-css3-fill"></i>
+                        <h3>CSS</h3>
+                        <p>Design responsive e animazioni avanzate</p>
+                        <div class="skill-progress" style="width: 85%;"></div>
+                    </div>
+
+                    <div class="skill-item" data-skill="JavaScript">
+                        <i class="ri-javascript-fill"></i>
+                        <h3>JavaScript</h3>
+                        <p>Programmazione interattiva e sviluppo frontend dinamico</p>
+                        <div class="skill-progress" style="width: 85%;"></div>
+                    </div>
+
+                    <div class="skill-item" data-skill="Adobe Photoshop">
+                        <i class="ri-image-edit-fill"></i>
+                        <h3>Adobe Photoshop</h3>
+                        <p>Ritocco fotografico e design grafico professionale</p>
+                        <div class="skill-progress" style="width: 80%;"></div>
+                    </div>
+
+                    <div class="skill-item" data-skill="Adobe Illustrator">
+                        <i class="ri-pen-nib-fill"></i>
+                        <h3>Adobe Illustrator</h3>
+                        <p>Creazione di illustrazioni vettoriali e grafica logotipica</p>
+                        <div class="skill-progress" style="width: 75%;"></div>
+                    </div>
+
+                    <div class="skill-item" data-skill="Sketchbook">
+                        <i class="ri-palette-fill"></i>
+                        <h3>Sketchbook</h3>
+                        <p>Disegno digitale e illustrazione creativa</p>
+                        <div class="skill-progress" style="width: 70%;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 data-i18n="projects.title">Progetti</h2>
+                <div class="project-grid">
+                    <div class="project-card glitch-effect">
+                        <div class="project-card-inner">
+                            <div class="project-card-front">
+                                <h3 data-i18n="projects.project1.title">In arrivo</h3>
+                                <p data-i18n="projects.project1.description">Progetto in fase di preparazione</p>
+                            </div>
+                            <div class="project-card-back">
+                                <a href="#" data-i18n="projects.project1.explore">Prossimamente</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card glitch-effect">
+                        <div class="project-card-inner">
+                            <div class="project-card-front">
+                                <h3 data-i18n="projects.project2.title">In arrivo</h3>
+                                <p data-i18n="projects.project2.description">Progetto in fase di preparazione</p>
+                            </div>
+                            <div class="project-card-back">
+                                <a href="#" data-i18n="projects.project2.explore">Prossimamente</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container" style="text-align: center;">
+                <h1 data-i18n="contact.title">Contattami</h1>
+                <form class="contact-form">
+                </form>
+            </div>
+                <div class="container">
+                    <div class="contact-message" style="text-align: center;">
+                        <h2>
+                            <a href="mailto:febcorporation@gmail.com" class="contact-link"> Per collaborazioni, supporto o aiuto, opportunità di lavoro che rispecchiano la mia formazione e altro scrivimi all'email febcorporation@gmail.com. <br> Per farlo clicca su questo messaggio</a>
+                        </h2>
+                    </div>
+                </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p data-i18n="footer.copyright">&copy; 2025 Portfolio by Fabio Sapone. All rights reserved.</p>
+    </footer>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const defaultLang = 'it';
+            document.documentElement.lang = defaultLang;
+            updateLanguage(defaultLang);
+        });
+    </script>
+</body>
+</html>

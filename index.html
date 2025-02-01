@@ -1,0 +1,83 @@
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabio Sapone | Choose language</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <style>
+        :root {
+            --primary-color: #8e44ad;
+            --secondary-color: #6a0dad;
+            --background-color: #1a0033;
+            --text-color: #f4f4f4;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        .language-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: rgba(142, 68, 173, 0.1);
+            padding: 50px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .language-container h1 {
+            margin-bottom: 30px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .language-buttons {
+    display: flex;
+    justify-content: center; /* Centra orizzontalmente */
+    gap: 20px;
+}
+
+
+
+        .language-btn {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 10px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+            text-align: center;
+        }
+
+        .language-btn:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="language-container">
+        <h1>Scegli la tua Lingua / Choose your language</h1>
+        <div class="language-buttons">
+            <a href="portfolio-it.html" class="language-btn">Italiano 🇮🇹</a>
+            <a href="portfolio-en.html" class="language-btn">English 🇺🇸</a>
+        </div>
+    </div>
+</body>
+</html>
